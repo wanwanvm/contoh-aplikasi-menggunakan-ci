@@ -1,0 +1,288 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.text-ppop {
+	color: #C83034;
+	vertical-align: middle;
+	/* text-align: center; */
+}
+
+.bg-light-ppop {
+	background-color: #F2F2F2;
+}
+
+.bg-ppop {
+	background: #C83034;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ef473a, #cb2d3e);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* mobile */
+.bg-nav-ppop {
+	background-color: #FFFFFF;
+}
+
+/* tablet, ipad */
+@media (min-width:768px) {
+	.bg-nav-ppop {
+		background: linear-gradient(-40deg, #C83034 60%, #FFFFFF 25%)
+	}
+}
+
+/* pc */
+@media (min-width:992px) {
+	.bg-nav-ppop {
+		background: linear-gradient(-40deg, #C83034 70%, #FFFFFF 25%)
+	}
+}
+
+@media (min-width:1200px) {
+	.bg-nav-ppop {
+		background: linear-gradient(-40deg, #C83034 75%, #FFFFFF 25%)
+	}
+}
+
+
+.nav-item {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.dropdown-item {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.nav-item .nav-link {
+	color: black !important;
+}
+
+@media (min-width: 768px) {
+	.nav-item .nav-link {
+		color: white !important;
+	}
+}
+
+.btn-register {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.btn-register:hover {
+	color: #C83034 !important;
+}
+
+.carousel-item img {
+	height: 480px;
+	object-fit: cover;
+}
+
+@media (min-width:992px) {
+	.carousel-item img {
+		height: 90vh;
+	}
+}
+
+.carousel-indicators .active {
+	background-color: #C83034 !important;
+}
+
+.carousel-item:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.226);
+}
+
+.text-inner {
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 1
+}
+
+.text-div {
+	height: 100px;
+	line-height: 100px;
+	width: 100px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	text-align: center;
+    margin: auto;
+	transition: all ease 0.25s;
+	/* border: 2px solid #C83034; */
+}
+
+.tahapan:hover>.text-div {
+	background-color: #C83034;
+}
+
+.tahapan:hover>.text-div .text-ppop {
+	color: #ffffff;
+}
+
+.banner-title {
+    font-size: 30px;
+    /* text-shadow: 3px 3px #0000009f; */
+}
+
+.banner-subtitle {
+	color: #FFD470;
+	font-size: 16px;
+}
+
+.text-button-ppop {
+	font-size: 12px
+}
+
+@media (min-width: 992px) {
+	.banner-title {
+		font-size: 40px;
+	}
+
+	.banner-subtitle {
+		font-size: 28px;
+	}
+
+	.text-button-ppop {
+		font-size: 16px
+	}
+}
+
+
+.nounderline {
+    text-decoration: none !important
+}
+
+#tahapan-seleksi i {
+	font-size: 40px;
+}
+
+#tahapan-seleksi .card {
+	border: none;
+	transition: all ease 0.5s;
+}
+
+#tahapan-seleksi .card .card-body .card-text {
+	font-size: 14px;
+}
+
+#news .card .card-img-top {
+	object-fit: cover;
+}
+
+#news .card .card-body .card-text {
+	font-size: 14px;
+}
+
+#news .card {
+	position: relative;
+	top: 0;
+	transition: top ease 0.5s;
+}
+
+#news .card:hover {
+	top: -10px;
+}
+
+.gallery-col {
+	overflow: hidden;
+}
+
+.gallery-col img:hover {
+	transform: scale(1.2);
+}
+
+.gallery-item {
+	transition: all ease 0.5s;
+	height: 250px;
+	width: 100%;
+	object-fit: cover;
+}
+
+/* STEP */
+.step {
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	border: 1px solid;
+	text-align: center;
+	margin: auto;
+}
+
+.step span {
+	vertical-align: middle;
+}
+
+.step-active {
+	color: green;
+}
+
+.step-done {
+	color: green;
+}
+
+.step-done>.step {
+	background-color: green;
+}
+
+.list-group {
+	max-height: 300px;
+	margin-bottom: 10px;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+.atlet-img {
+	object-fit: cover;
+}
+
+
+a, a:active, a:focus {
+    outline: none;
+}
+
+button, button:active, button:focus {
+    outline: none;
+}
+
+.jumbotron {
+	/* background-color: #C83034; */
+	margin-bottom: 0;
+	width: 100%;
+	top: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background: linear-gradient(150deg, #343a40 60%, transparent 30%); */
+	background: url('../img/hero-bg.png') no-repeat center center;
+	background-size: cover;
+}
+
+#jumbo {
+	height: 100%;
+}
+
+.sosmed-logo {
+	height: 30px;
+	width: 30px;
+}

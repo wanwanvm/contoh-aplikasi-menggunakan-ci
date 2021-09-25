@@ -1,0 +1,214 @@
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-10">
+<div class="rounded border my-3 bg-white py-3">
+
+
+							<h4 class="px-4">Informasi Pribadi</h4>
+							<p class="px-4 text-muted">Masukkan data diri, kontak, dan data keluarga pada form dibawah ini dengan data yang sebenar-benarnya dan dapat dipertanggungjawabkan.</p>
+							<hr>
+
+							<div class="px-4">
+
+								<h5 class="mb-3">Data Diri</h5>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="name">Nama</label>
+										<input type="text" class="form-control" id="name" name="name" required>
+									</div>
+									<div class="form-group col-md-3">
+										<label for="nik">NIK</label>
+										<input type="text" class="form-control" id="nik" name="nik" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
+									</div>
+									<div class="form-group col-md-3">
+										<label for="nis">NIS</label>
+										<input type="text" class="form-control" id="nis" name="nis" required>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="tempat_lahir">Tempat Lahir</label>
+										<input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" required>
+									</div>
+									<div class="form-group col-md-6">
+										<label for="tanggal_lahir">Tanggal Lahir</label>
+										<div class="input-group">
+											<input type="text" class="form-control datetimepicker-input" id="tgl_lahir" data-toggle="datetimepicker" data-target="#datetimepicker" name="tanggal_lahir" required />
+											<div class="input-group-append">
+												<span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-4">
+										<label for="cabang_olahraga_id">Cabang Olahraga</label>
+										<select class="selectpicker border form-control" data-live-search="true" id="cabang_olahraga_id" name="cabang_olahraga_id" required>
+											<option selected disabled>-- Pilih --</option>
+																																															<option data-tokens="ANGKAT BESI" value="4">ANGKAT BESI</option>
+																									<option data-tokens="ATLETIK" value="8">ATLETIK</option>
+																									<option data-tokens="BOLA BASKET" value="18">BOLA BASKET</option>
+																									<option data-tokens="BOLA VOLLEY" value="20">BOLA VOLLEY</option>
+																									<option data-tokens="BOLA VOLLEY PASIR" value="22">BOLA VOLLEY PASIR</option>
+																									<option data-tokens="BULU TANGKIS" value="26">BULU TANGKIS</option>
+																									<option data-tokens="GULAT" value="43">GULAT</option>
+																									<option data-tokens="JUDO" value="47">JUDO</option>
+																									<option data-tokens="KARATE" value="49">KARATE</option>
+																									<option data-tokens="PANAHAN" value="56">PANAHAN</option>
+																									<option data-tokens="PENCAK SILAT" value="60">PENCAK SILAT</option>
+																									<option data-tokens="RENANG" value="69">RENANG</option>
+																									<option data-tokens="SEPAK BOLA" value="80">SEPAK BOLA</option>
+																									<option data-tokens="SEPAK TAKRAW" value="81">SEPAK TAKRAW</option>
+																									<option data-tokens="TAEKWONDO" value="86">TAEKWONDO</option>
+																									<option data-tokens="TENIS MEJA" value="90">TENIS MEJA</option>
+																									<option data-tokens="TINJU" value="93">TINJU</option>
+																																	</select>
+									</div>
+									<div class="form-group col-md-4">
+										<label for="no_spesialisasi">Nomor Tanding/Kelas/Posisi</label>
+										<input type="text" class="form-control" id="no_spesialisasi" name="no_spesialisasi" required>
+									</div>
+									<div class="form-group col-md-4">
+										<label for="asal_sekolah">Asal Sekolah</label>
+										<input type="text" class="form-control" id="asal_sekolah" name="asal_sekolah" required>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-3">
+										<label for="gender">Jenis Kelamin</label>
+										<select name="gender" id="gender" class="form-control" required>
+											<option selected disabled>-- Pilih --</option>
+											<option value="male">Laki-laki</option>
+											<option value="female">Perempuan</option>
+										</select>
+									</div>
+									<div class="form-group col-md-3">
+										<label for="berat_badan">Berat Badan</label>
+										<div class="input-group">
+											<input type="text" class="form-control" id="berat_badan" name="berat_badan" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
+											<div class="input-group-append">
+												<span class="input-group-text">kg</span>
+											</div>
+										</div>
+									</div>
+									<div class="form-group col-md-3">
+										<label for="tinggi_badan">Tinggi Badan</label>
+										<div class="input-group">
+											<input type="text" class="form-control" id="tinggi_badan" name="tinggi_badan" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
+											<div class="input-group-append">
+												<span class="input-group-text">cm</span>
+											</div>
+										</div>
+									</div>
+									<div class="form-group col-md-3">
+										<label for="golongan_darah">Golongan Darah</label>
+										<select name="golongan_darah" id="golongan_darah" class="form-control" required>
+											<option selected disabled>-- Pilih --</option>
+											<option value="a">A</option>
+											<option value="b">B</option>
+											<option value="o">O</option>
+											<option value="ab">AB</option>
+										</select>
+									</div>
+								</div>
+								<h5 class="my-3">Kontak</h5>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="no_telp">No. Handphone</label>
+										<input type="text" class="form-control" id="no_telp" name="no_telp" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
+									</div>
+									<div class="form-group col-md-6">
+										<label for="email">Email</label>
+										<input type="email" class="form-control" id="email" name="email" placeholder="e.g: contoh@ppop.com" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="address">Alamat Domisili</label>
+									<input type="text" class="form-control" id="address" name="address" required>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-3">
+										<label for="m_provinsi">Provinsi</label>
+										<select class="border form-control" id="m_provinsi" name="m_provinsi" required>
+											<option id="selection" selected disabled>-- Pilih --</option>
+																																															<option value="72">ACEH</option>
+																									<option value="73">SUMATERA UTARA</option>
+																									<option value="74">SUMATERA BARAT</option>
+																									<option value="75">RIAU</option>
+																									<option value="76">JAMBI</option>
+																									<option value="77">SUMATERA SELATAN</option>
+																									<option value="78">BENGKULU</option>
+																									<option value="79">LAMPUNG</option>
+																									<option value="80">KEPULAUAN BANGKA BELITUNG</option>
+																									<option value="81">KEPULAUAN RIAU</option>
+																									<option value="82">DKI JAKARTA</option>
+																									<option value="83">JAWA BARAT</option>
+																									<option value="84">JAWA TENGAH</option>
+																									<option value="85">DI YOGYAKARTA</option>
+																									<option value="86">JAWA TIMUR</option>
+																									<option value="87">BANTEN</option>
+																									<option value="88">BALI</option>
+																									<option value="89">NUSA TENGGARA BARAT</option>
+																									<option value="90">NUSA TENGGARA TIMUR</option>
+																									<option value="91">KALIMANTAN BARAT</option>
+																									<option value="92">KALIMANTAN TENGAH</option>
+																									<option value="93">KALIMANTAN SELATAN</option>
+																									<option value="94">KALIMANTAN TIMUR</option>
+																									<option value="95">KALIMANTAN UTARA</option>
+																									<option value="96">SULAWESI UTARA</option>
+																									<option value="97">SULAWESI TENGAH</option>
+																									<option value="98">SULAWESI SELATAN</option>
+																									<option value="99">SULAWESI TENGGARA</option>
+																									<option value="100">GORONTALO</option>
+																									<option value="101">SULAWESI BARAT</option>
+																									<option value="102">MALUKU</option>
+																									<option value="103">MALUKU UTARA</option>
+																									<option value="104">PAPUA BARAT</option>
+																									<option value="105">PAPUA</option>
+																																	</select>
+									</div>
+									<div class="form-group col-md-3">
+										<label for="m_kota">Kota</label>
+										<select class="border form-control" id="m_kota" name="m_kota" onchange="kota_onchange()" required>
+											<option id="selection" selected disabled>-- Pilih --</option>
+																					</select>
+									</div>
+									<div class="form-group col-md-3">
+										<label for="m_kecamatan">Kecamatan</label>
+										<select class="border form-control" id="m_kecamatan" name="m_kecamatan" required>
+											<option id="selection" selected disabled>-- Pilih --</option>
+																					</select>
+									</div>
+									<div class="form-group col-md-3">
+										<label for="m_kelurahan">Kelurahan</label>
+										<select class="border form-control" id="m_kelurahan" name="m_kelurahan" required>
+											<option id="selection" selected disabled>-- Pilih --</option>
+																					</select>
+									</div>
+									<div class="form-group col-md-3">
+										<label for="zip_code">Kode Pos</label>
+										<input type="text" class="form-control" id="zip_code" name="zip_code">
+									</div>
+								</div>
+								<h5 class="my-3">Data Keluarga</h5>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="nama_bapak">Nama Bapak/Wali</label>
+										<input type="text" class="form-control" id="nama_bapak" name="nama_bapak" required>
+									</div>
+									<div class="form-group col-md-6">
+										<label for="nama_ibu">Nama Ibu/Wali</label>
+										<input type="text" class="form-control" id="nama_ibu" name="nama_ibu" required>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-3">
+										<label for="jumlah_saudara">Jumlah Saudara Kandung</label>
+										<input type="text" class="form-control" id="jumlah_saudara" name="jumlah_saudara" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" value="0" required>
+									</div>
+								</div>
+							</div>
+						</div>
+</div>
+</div>
+</div>

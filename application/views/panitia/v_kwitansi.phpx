@@ -1,0 +1,86 @@
+<html><head></head><body>
+<?php 
+  $nik2 = $this->input->get('nik');
+
+		$query_total = $this->db->query("SELECT * FROM `peserta` WHERE nik=$nik2");
+		foreach ($query_total->result_array() as $t) :
+				$nik = $t['nik'];
+                $nama = $t['nama'];
+               $jns_klmn = $t['jns_klmn'];
+                $tgl_lhr = $t['tgl_lhr'];
+             $umur = $t['umur'];
+          $instansi = $t['instansi'];
+
+              $jns_pekerjaan = $t['jns_pekerjaan'];
+                   $nohp = $t['nohp'];
+                    $alamat = $t['alamat'];
+			
+
+?>
+<p><img src="<?php echo base_url() . 'theme/images/kwitansi/logo.png' ?>">
+</p>
+<p>Keterangan : <br>
+  1. Harap Membawa KTP dan Ballpoint<br>
+  2. Tetap menjaga protokol kesehatan
+  <br>
+  3. Wajib hadir di GBK pada pukul 07.55 WIB<br>
+  4. Program vaksinasi berlangsung selama 26 - 27 Februari 2021 dengan jumlah peserta &plusmn; 800 orang, <br>
+  untuk itu dimohon untuk disiplin terhadap waktu yang telah di tentukan.</p>
+<table width="624" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>NIK</td>
+    <td>:</td>
+    <td><?= "$nik"; ?></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Nama </td>
+    <td>:</td>
+    <td><?= "$nama"; ?></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Umur </td>
+    <td>:</td>
+    <td><?= "$umur" ;?> </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Tanggal registrasi</td>
+    <td>:</td>
+    <td>20 - 02 - 2021</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Tanggal Vaksin </td>
+    <td>:</td>
+    <td>&nbsp; 26 - 02 - 2021 </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="135">Estimasi Waktu Vaksin </td>
+    <td width="10">:</td>
+    <td width="390">08:00 - 08:07 WIB </td>
+    <td width="94">&nbsp;</td>
+  </tr>
+</table>
+
+<table width="624" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC"><div align="center"><strong>Skrining Sebelum Vaksinasi COVID-19</strong></div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<p></p>
+<?php endforeach; ?>
+
+</body></html>
